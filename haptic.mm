@@ -10,20 +10,13 @@ static NSHapticFeedbackPattern ParsePattern(const std::string& pattern) {
 
 static Napi::Value Perform(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
-
   if (info.Length() < 1 || !info[0].IsString()) {
     Napi::TypeError::New(env, "pattern must be a string").ThrowAsJavaScriptException();
     return env.Undefined();
   }
-
-  std::string pattern = info[0].As<Napi::String>().Utf8Value();
-
-  if (@available(macOS 10.10, *)) {
-    [[NSHapticFeedbackManager defaultPerformer]
-        performFeedbackPattern:ParsePattern(pattern)
-               performanceTime:NSHapticFeedbackPerformanceTimeNow];
-  }
-
+  [[NSHapticFeedbackManager defaultPerformer]
+      performFeedbackPattern:ParsePattern(info[0].As<Napi::String>().Utf8Value())
+             performanceTime:NSHapticFeedbackPerformanceTimeNow];
   return env.Undefined();
 }
 

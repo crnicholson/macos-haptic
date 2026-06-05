@@ -1,14 +1,9 @@
 const addon = require('./build/Release/macos_haptic.node');
-
-const PATTERNS = ['generic', 'alignment', 'levelChange'];
+const patterns = ['generic', 'alignment', 'levelChange'];
 
 function perform(pattern = 'generic') {
-  if (!PATTERNS.includes(pattern)) {
-    throw new Error(
-      `Unknown pattern "${pattern}". Valid patterns: ${PATTERNS.join(', ')}`
-    );
-  }
+  if (!patterns.includes(pattern)) throw new Error(`Unknown pattern "${pattern}". Valid patterns: ${patterns.join(', ')}`);
   addon.perform(pattern);
 }
 
-module.exports = { perform, patterns: [...PATTERNS] };
+module.exports = { perform, patterns: [...patterns] };

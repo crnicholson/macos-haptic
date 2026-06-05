@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "macos_haptic",
-      "sources": ["src/addon.mm"],
+      "sources": ["haptic.mm"],
       "include_dirs": [
         "<!@(node -p \"require('node-addon-api').include\")"
       ],
