@@ -14,6 +14,7 @@ function burst(count = 5, pattern = 'generic') {
 }
 
 function allBurst(count = 5) {
+  if (count <= 0) return;
   for (let i = 0; i < count; i++) {
     for (let x = 0; x < patterns.length; x++) {
       addon.perform(patterns[x]);

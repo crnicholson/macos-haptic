@@ -4,6 +4,11 @@
   "description": "Native Node.js addon for macOS trackpad haptic feedback (Taptic Engine)",
   "main": "index.js",
   "gypfile": true,
+  "files": [
+    "index.js",
+    "haptic.mm",
+    "binding.gyp"
+  ],
   "scripts": {
     "install": "node-gyp rebuild",
     "build": "node-gyp rebuild",
@@ -18,5 +23,21 @@
   "os": ["darwin"],
   "engines": {
     "node": ">=18"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anomalyco/macos-haptic.git"
+  },
+  "keywords": [
+    "macos",
+    "haptic",
+    "taptic",
+    "trackpad",
+    "force",
+    "touch",
+    "native",
+    "addon"
+  ],
+  "author": "Charlie",
+  "license": "MIT"
 }

@@ -13,7 +13,7 @@
           "xcode_settings": {
             "OTHER_LDFLAGS": [
               "-framework", "AppKit",
-              "-F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks",
+              "-F<!(xcrun --show-sdk-path)/System/Library/PrivateFrameworks",
               "-framework", "MultitouchSupport"
             ]
           }
