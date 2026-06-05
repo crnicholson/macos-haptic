@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anomalyco/macos-haptic.git"
+    "url": "git+https://github.com/crnicholson/macos-haptic.git"
   },
   "keywords": [
     "macos",
@@ -38,6 +38,6 @@
     "native",
     "addon"
   ],
-  "author": "Charlie",
+  "author": "Charlie Nicholson",
   "license": "MIT"
 }
