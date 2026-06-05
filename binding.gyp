@@ -11,7 +11,11 @@
       "conditions": [
         ["OS=='mac'", {
           "xcode_settings": {
-            "OTHER_LDFLAGS": ["-framework", "AppKit"]
+            "OTHER_LDFLAGS": [
+              "-framework", "AppKit",
+              "-F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks",
+              "-framework", "MultitouchSupport"
+            ]
           }
         }]
       ]
