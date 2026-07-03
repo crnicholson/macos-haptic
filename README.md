@@ -71,6 +71,10 @@ console.log(isFingerPresent());
 
 Array of valid pattern names: `['generic', 'alignment', 'levelChange']`.
 
+## Credit
+
+Massive shoutout to Kyome22's [OpenMultitouchSupport](https://github.com/Kyome22/OpenMultitouchSupport), whose code was instrumental in the detection of finger presence. 
+
 ## License
 
 MIT
