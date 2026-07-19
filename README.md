@@ -1,6 +1,6 @@
 # macos-haptic
 
-Native Node.js addon for macOS trackpad haptic feedback (Taptic Engine). Also exposes trackpad pressure and finger presence data via the MultitouchSupport private framework.
+Native Node.js addon for macOS trackpad haptic feedback (Taptic Engine). Also exposes trackpad pressure and finger presence data via the MultitouchSupport private framework. You can see it in a project [here](https://github.com/crnicholson/morse-haptic/raw/refs/heads/main/demo.mp4), but obviously the only way to experience it is via touch.
 
 ## Requirements
 
